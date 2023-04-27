@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost/sigep</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">postgres</property>
+		<property name="hibernate.show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+	
+		<mapping class="br.com.sigep.modelo.UsuarioDTO"/>
+		<mapping class="br.com.sigep.modelo.AssuntoDTO"/>
+		<mapping class="br.com.sigep.modelo.BancaDTO"/>
+		<mapping class="br.com.sigep.modelo.ConcursoDTO"/>
+		<mapping class="br.com.sigep.modelo.DisciplinaDTO"/>
+		<mapping class="br.com.sigep.modelo.DisciplinaDTOAssuntoDTO"/>
+		<mapping class="br.com.sigep.modelo.GrupoDTO"/>
+		<mapping class="br.com.sigep.modelo.NivelDTO"/>
+		<mapping class="br.com.sigep.modelo.ProvaDTO"/>
+		<mapping class="br.com.sigep.modelo.QuestaoDTO"/>
+		<mapping class="br.com.sigep.modelo.SimuladoDTOQuestaoDTO"/>
+		<mapping class="br.com.sigep.modelo.RespostaDTO"/>
+		<mapping class="br.com.sigep.modelo.SimuladoDTO"/>
+	
+	</session-factory>
+</hibernate-configuration>
